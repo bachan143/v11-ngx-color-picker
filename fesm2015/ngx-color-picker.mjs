@@ -499,7 +499,7 @@ class ColorPickerComponent {
         this.slider = new SliderPosition(0, 0, 0, 0);
         const hueWidth = this.hueSlider.nativeElement.offsetWidth || 140;
         const alphaWidth = this.alphaSlider.nativeElement.offsetWidth || 140;
-        this.sliderDimMax = new SliderDimension(hueWidth, this.cpWidth - 32, 130, alphaWidth);
+        this.sliderDimMax = new SliderDimension(hueWidth + 42, this.cpWidth - 32, 130, alphaWidth);
         if (this.cpCmykEnabled) {
             this.format = ColorFormats.CMYK;
         }
